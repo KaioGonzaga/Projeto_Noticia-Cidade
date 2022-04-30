@@ -1,0 +1,244 @@
+@charset "UTF-8";  
+
+/* ------- RESET ------- */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* -------- VARIÁVEIS ------- */
+
+:root {
+    --cor-padrao: #294C71;
+    --cor-destaque: #b10133;
+    --cor-destaque-menu: #69001d;
+}
+
+
+/* ------ LAYOUT ------ */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(imagens/fundo.png) repeat-x;
+}
+
+.container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 15px;
+}
+
+main {
+    margin-top: 80px;
+    margin-bottom: 40px;    
+}
+
+
+div.conteudo {
+    background: url(imagens/fundo-caixa.png);
+    
+}
+
+.subtitulo {
+    background-color: var(--cor-padrao);
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+
+/* ----- HEADER ----- */
+
+
+
+#topo {
+    padding-top: 25px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+    height: 150px;
+}
+
+/* ----- MENU HORIZONTAL ----- */
+
+ 
+#topo ul {
+    margin-top: 40px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#topo ul li {
+    border-right: 1px solid rgba(255, 0, 0, 0.058);
+}
+
+#topo ul a {
+    color: white;
+    font-size: 0.9em;
+    padding: 0.7em 1.1em;
+    background: var(--cor-destaque);
+}
+
+#topo ul a:hover {
+    color: var(--cor-destaque-menu);
+}
+
+body.home #menu-horizontal a#home,
+body.brasil #menu-horizontal a#brasil,
+body.fotos #menu-horizontal a#foto {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+
+/* ---Conteudo Principal --- */
+.caixa {
+    background: #f3f3f3 url(imagens/fundo-caixa.png); 
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.caixa-conteudo {
+    background: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#primario .entrevista a,
+#secundario .sub a {
+    color: var(--cor-destaque);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.card {
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+}
+
+#uma-coluna .card {
+    grid-template-columns: 1fr;
+}
+
+#duas-colunas .card {
+    grid-template-columns: 0.765fr 2fr;
+}
+
+
+/* --- CONTEUDO LATERAL --- */
+
+#lateral a {
+    color: black;
+    line-height: 40px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral a:hover {
+    background: #f9f9f9 url(imagens/marcador.png) no-repeat left center; 
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    background-color: #fff;
+}
+
+input.submit {
+    background: var(--cor-destaque);
+    color: white;
+    border: 2px solid #870529;
+    margin-top: 5px;
+}
+
+/* --- CONTEÚDO PRIMÁRIO --- */
+
+#primario .entrevista h3 {
+    background: var(--cor-destaque);
+}
+
+/* --- CONTEUDO SECUNDÁRIO */
+
+#secundario .sub h3 {
+    background: var(--cor-destaque);
+    color: white;
+}
+
+/* --- Lista de Noticias --- */
+
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias h3 {
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #3e7ab9;
+}
+
+#lista-noticias p {
+    font-size: 0.6em;
+}
+
+#lista-noticias li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+/* ---FOOTER --- */ 
+
+footer {
+    background: #294c71;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
